@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "snapdragon": "^0.12.0",
+    "snapdragon-capture": "^0.2.0",
     "snapdragon-capture-set": "^1.0.1",
+    "snapdragon-is-inside": "^0.1.2",
     "snapdragon-lexer": "^4.0.0"
   }
 }

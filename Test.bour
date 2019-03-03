@@ -1,0 +1,27 @@
+P : Paragraph 
+style 
+    floating : centred
+    text : bold #FFA
+    background : #110 
+    responsive : hide(width < 400px)
+event 
+    hover 
+        text : italics    
+    click 
+        text : hide
+args 
+    [ text ] 
+
+@Extend P
+constrict() {
+    this.width = 100px
+}
+
+const json = {
+    numkey : 121,
+    strkey : "testing the strings"
+}
+
+let p = P(`Number ${json.numkey} and string ${json.strkey}`)
+
+doc.add(p)
