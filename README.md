@@ -3,8 +3,8 @@ Bourgeois
 
 ![Logo](assets/title.png)
 
-A Compiler for a new language - BOUR.
+A Compiler for a new language - BOURGEOIS.
 
-And its accompanying styling language - BOURGEOIS.
+It will be a language aimed primarily at front-end development, with a smoother inplementation of styling, which will eventually be compiled into inline CSS.
 
 Soon to be followed by the bourgeoissie.

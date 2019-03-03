@@ -1,20 +1,22 @@
-P : Paragraph 
-style 
-    floating : centred
-    text : bold #FFA
-    background : #110 
-    responsive : hide(width < 400px)
-event 
-    hover 
-        text : italics    
-    click 
-        text : hide
-args 
-    [ text ] 
+P > Paragraph {
+    style 
+        floating : centred
+        text : bold #FFA
+        background : #110 
+        responsive : hide(width < 400px)
+    event 
+        hover 
+            text : italics    
+        click 
+            text : hide
+    args 
+        [ text ] 
+    // text = args.text // implied by same name args
+}
 
 @Extend P
 constrict() {
-    this.width = 100px
+    this.width = 100
 }
 
 const json = {
@@ -23,5 +25,7 @@ const json = {
 }
 
 let p = P(`Number ${json.numkey} and string ${json.strkey}`)
+
+p.style.text
 
 doc.add(p)
