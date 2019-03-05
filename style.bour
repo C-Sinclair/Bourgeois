@@ -1,0 +1,15 @@
+element Dov extends Div 19891 {
+    // 98201
+    // style {
+    //     tone = blue
+    // }
+    event {
+        click
+    }
+}
+
+const d = new Dov 
+
+alias clear (
+    background-color: white;
+)
