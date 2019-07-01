@@ -14,7 +14,7 @@ impl Context {
 }
 
 struct ContextStack {
-    
+
 }
 impl ContextStack {
     fn add(c: Context) {
@@ -36,12 +36,28 @@ impl ContextBound {
     }
 }
 
-enum TOKEN_TYPE {
+enum TokenType {
     punctuation,
     string,
-    name
+    keyword,
+    whitespace,
+    number
 }
 
 struct Token {
-    type: TOKEN_TYPE
+    type: TokenType
 }
+
+pub fn main() -> Vec<Token> {
+    // get file input
+
+    // loop over chars
+
+    // run match 
+
+
+}
+
+main()
+
+// https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html
