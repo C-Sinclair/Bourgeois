@@ -1,0 +1,16 @@
+User (id: local.id) { ^user
+    name 
+    country {
+        users
+    }
+}.login() => success {
+        (#content h4).text {
+            `$user.name logged in`
+        }
+        delay(3000)
+        navigate(page.next)
+    } => error {
+        (#content h4).text {
+            `Sorry no user found`
+        }
+    }
